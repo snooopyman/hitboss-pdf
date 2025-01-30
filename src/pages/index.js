@@ -1,10 +1,10 @@
 export default function Home() {
     return (
-        <div className="w-full h-screen flex justify-center items-center bg-gray-100">
-            <iframe
-                src="/hitbosss.pdf"
-                className="w-full h-full border-none overflow-auto"
-            />
+        <div>
+            <object id="pdf" height="100%" width="100%" type="application/pdf" data="/hitbosss.pdf">
+                <p>Tu navegador no soporta archivos PDF.</p>
+            </object>
         </div>
     );
 }
+
