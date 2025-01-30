@@ -1,14 +1,11 @@
 export default function Home() {
     return (
-        <div className="w-screen h-screen flex justify-center bg-gray-100">
-            <object
-                data="/hitbosss.pdf"
-                type="application/pdf"
-                className="w-full h-full"
-                style={{ minHeight: "100vh" }}
-            >
-                <p>Tu navegador no soporta la visualización de PDFs. <a href="/hitbosss.pdf">Descargar PDF</a></p>
-            </object>
+        <div className="w-full h-screen flex justify-center bg-gray-100">
+            <iframe
+                src="/hitbosss.pdf"
+                className="w-full h-full min-h-[100vh] border-none"
+                style={{ overflow: "auto" }}
+            />
         </div>
     );
 }
